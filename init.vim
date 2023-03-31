@@ -1,1 +1,0 @@
-/home/fisk/.dotfiles/dotfiles/init.vim
