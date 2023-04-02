@@ -3,6 +3,7 @@ require("tehfisk.colorscheme")
 require("tehfisk.remap")
 require("tehfisk.vimtex")
 require("tehfisk.autocmd")
+require("lsp.lua")
 
 vim.opt.encoding = 'utf-8'
 vim.opt.clipboard = 'unnamedplus'
