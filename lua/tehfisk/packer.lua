@@ -6,7 +6,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  
+
   use 'lervag/vimtex'
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -34,5 +34,5 @@ return require('packer').startup(function(use)
 	    {'L3MON4D3/LuaSnip'},     -- Required
 	  }
 	}
-    use 'theprimeagen/vimbegood'
+    use 'theprimeagen/vim-be-good'
 end)
