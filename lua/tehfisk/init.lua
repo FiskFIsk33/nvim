@@ -1,3 +1,6 @@
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
 require("tehfisk.packer")
 require("tehfisk.colorscheme")
 require("tehfisk.remap")
