@@ -13,7 +13,7 @@ vim.opt.clipboard = 'unnamedplus'
 
 	--avoids shitting ~ files all over the place
 vim.opt.backupdir = '~/.vimtmp//,.'
-vim.opt.directory = '~/.vimtmp//,.'
+vim.opt.directory = '~/.vimtmp//'
 
 vim.opt.number = true
 vim.opt.relativenumber = true
