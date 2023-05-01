@@ -15,5 +15,5 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.backupdir = '~/.vimtmp//,.'
 vim.opt.directory = '~/.vimtmp//,.'
 
-vim.opt.number = true 
+vim.opt.number = true
 vim.opt.relativenumber = true
