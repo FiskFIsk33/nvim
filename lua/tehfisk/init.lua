@@ -12,8 +12,9 @@ vim.opt.encoding = 'utf-8'
 vim.opt.clipboard = 'unnamedplus'
 
 	--avoids shitting ~ files all over the place
+vim.opt.undofile = true
 vim.opt.backupdir = '/home/fisk/.vimtmp//,.'
-
+vim.opt.undodir = '/home/fisk/.vimtmp//,.'
 vim.opt.directory = '/home/fisk/.vimtmp//'
 
 vim.opt.number = true
