@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/home/fisk/.local/share/nvim/site/pack/packer/start/vim-be-good",
     url = "https://github.com/theprimeagen/vim-be-good"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/fisk/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   vimtex = {
     loaded = true,
     path = "/home/fisk/.local/share/nvim/site/pack/packer/start/vimtex",
