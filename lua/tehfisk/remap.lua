@@ -13,4 +13,5 @@ vim.keymap.set("n", "<C-U>", "<C-U>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-
+--vim fugitive
+vim.keymap.set("n", "<leader>gs", vim.cmg.Git)
