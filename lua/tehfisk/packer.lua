@@ -36,4 +36,5 @@ return require('packer').startup(function(use)
 	}
     use 'theprimeagen/vim-be-good'
     use 'mbbill/undotree'
+    use 'tpope/vim-fugitive'
 end)
