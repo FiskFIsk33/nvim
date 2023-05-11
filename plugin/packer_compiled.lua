@@ -124,6 +124,16 @@ _G.packer_plugins = {
     path = "/home/fisk/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  undotree = {
+    loaded = true,
+    path = "/home/fisk/.local/share/nvim/site/pack/packer/start/undotree",
+    url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "/home/fisk/.local/share/nvim/site/pack/packer/start/vim-be-good",
+    url = "https://github.com/theprimeagen/vim-be-good"
+  },
   vimtex = {
     loaded = true,
     path = "/home/fisk/.local/share/nvim/site/pack/packer/start/vimtex",
