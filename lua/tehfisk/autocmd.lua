@@ -11,6 +11,6 @@ vim.cmd [[
 vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
     pattern = "*.tex",
     callback = function()
-        vim.cmd [[let @t = "\texttt{"]]
+        vim.cmd [[let @t = "\\texttt{"]]
     end
 })
