@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   --use 'mrjones2014/nvim-ts-rainbow'
-  use 'hiphish/rainbow-delimiters.nvim'
+--  use 'hiphish/rainbow-delimiters.nvim'
 
   --Lsp-Zero
 	use {
