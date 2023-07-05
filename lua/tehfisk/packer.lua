@@ -10,8 +10,8 @@ return require('packer').startup(function(use)
   use 'lervag/vimtex'
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
---  use 'HiPhish/nvim-ts-rainbow2'
-  use 'mrjones2014/nvim-ts-rainbow'
+  --use 'mrjones2014/nvim-ts-rainbow'
+  use 'HiPhish/rainbow-delimeters.nvim'
 
   --Lsp-Zero
 	use {
