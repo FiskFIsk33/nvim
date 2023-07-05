@@ -119,11 +119,6 @@ _G.packer_plugins = {
     path = "/home/fisk/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["rainbow-delimiters.nvim"] = {
-    loaded = true,
-    path = "/home/fisk/.local/share/nvim/site/pack/packer/start/rainbow-delimiters.nvim",
-    url = "https://github.com/hiphish/rainbow-delimiters.nvim"
-  },
   undotree = {
     loaded = true,
     path = "/home/fisk/.local/share/nvim/site/pack/packer/start/undotree",
