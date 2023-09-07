@@ -37,5 +37,4 @@ require'nvim-treesitter.configs'.setup {
 
 	  }
   },
->>>>>>> 940b5ac6a95181196a5d760295414db3d7206d1c
 }
