@@ -24,21 +24,6 @@ require'nvim-treesitter.configs'.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
-<<<<<<< HEAD
---  rainbow = {
---	  enable = true,
-	  --hlgroups = {
-          --     'TSRainbowYellow',
-          --     'TSRainbowBlue',
-          --     'TSRainbowOrange',
-          --     'TSRainbowGreen',
-          --     'TSRainbowViolet',
-          --     'TSRainbowCyan',
-	  --     'TSRainbowRed'
-
-	  --}
---  },
-=======
   rainbow = {
 	  enable = true,
 	  hlgroups = {
