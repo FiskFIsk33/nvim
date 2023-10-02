@@ -13,4 +13,4 @@ vim.keymap.set("n", "<C-U>", "<C-U>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-
+vim.api.nvim_create_user_command('w!!', 'SudaWrite', {})
