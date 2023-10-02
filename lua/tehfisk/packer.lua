@@ -4,37 +4,37 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+	-- Packer can manage itself
+	use 'wbthomason/packer.nvim'
 
-  use 'lervag/vimtex'
+	use 'lervag/vimtex'
 
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  --use 'mrjones2014/nvim-ts-rainbow'
---  use 'hiphish/rainbow-delimiters.nvim'
-
-  --Lsp-Zero
+	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+	--use 'mrjones2014/nvim-ts-rainbow'
+	--use 'hiphish/rainbow-delimiters.nvim'
+	use 'lambdalisue/suda.vim'
+	--Lsp-Zero
 	use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v2.x',
-	  requires = {
-	    -- LSP Support
-	    {'neovim/nvim-lspconfig'},             -- Required
-	    {                                      -- Optional
-	      'williamboman/mason.nvim',
-	      run = function()
-		pcall(vim.cmd, 'MasonUpdate')
-	      end,
-	    },
-	    {'williamboman/mason-lspconfig.nvim'}, -- Optional
+		'VonHeikemen/lsp-zero.nvim',
+		branch = 'v2.x',
+		requires = {
+			-- LSP Support
+			{ 'neovim/nvim-lspconfig' }, -- Required
+			{       -- Optional
+				'williamboman/mason.nvim',
+				run = function()
+					pcall(vim.cmd, 'MasonUpdate')
+				end,
+			},
+			{ 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
-	    -- Autocompletion
-	    {'hrsh7th/nvim-cmp'},     -- Required
-	    {'hrsh7th/cmp-nvim-lsp'}, -- Required
-	    {'L3MON4D3/LuaSnip'},     -- Required
-	  }
+			-- Autocompletion
+			{ 'hrsh7th/nvim-cmp' }, -- Required
+			{ 'hrsh7th/cmp-nvim-lsp' }, -- Required
+			{ 'L3MON4D3/LuaSnip' }, -- Required
+		}
 	}
-    use 'theprimeagen/vim-be-good'
-    use 'mbbill/undotree'
-    use 'tpope/vim-fugitive'
+	use 'theprimeagen/vim-be-good'
+	use 'mbbill/undotree'
+	use 'tpope/vim-fugitive'
 end)
