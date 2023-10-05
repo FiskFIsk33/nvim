@@ -14,4 +14,4 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 --vim.cmd('command! -nargs=? -complete=file bajsbajs call s:write(<q-args>)')
-vim.api.nvim_create_user_command('sw', 'SudaWrite', {})
+vim.api.nvim_create_user_command('Sw', 'SudaWrite', {})

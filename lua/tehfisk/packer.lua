@@ -10,6 +10,8 @@ return require('packer').startup(function(use)
 	use 'lervag/vimtex'
 
 	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+
+	use 'junegunn/fzf.vim'
 	--use 'mrjones2014/nvim-ts-rainbow'
 	--use 'hiphish/rainbow-delimiters.nvim'
 	use 'lambdalisue/suda.vim'
