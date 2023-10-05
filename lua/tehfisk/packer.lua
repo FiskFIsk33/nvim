@@ -12,7 +12,6 @@ return require('packer').startup(function(use)
 	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
 	use 'junegunn/fzf.vim'
-	asdfdsaf
 	--use 'mrjones2014/nvim-ts-rainbow'
 	--use 'hiphish/rainbow-delimiters.nvim'
 	use 'lambdalisue/suda.vim'
