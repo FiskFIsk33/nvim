@@ -8,6 +8,7 @@ vim.keymap.set("n", "<C-H>", "<C-W><C-H>")
 --FZF
 vim.keymap.set("n", "<C-P>", ":Files<CR>")
 vim.keymap.set("n", "<C-L>", ":GFiles<CR>")
+vim.keymap.set("n", "<C-K>", ":Buffers<CR>")
 
 --keep centered when moving around
 vim.keymap.set("n", "<C-D>", "<C-D>zz")
