@@ -36,5 +36,5 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-fugitive'
 
 
-	use 'hiphish/rainbow-delimiters.nvim'
+--	use 'hiphish/rainbow-delimiters.nvim'
 end)
