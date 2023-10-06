@@ -13,7 +13,6 @@ return require('packer').startup(function(use)
 
 	use 'junegunn/fzf.vim'
 	--use 'mrjones2014/nvim-ts-rainbow'
-	--use 'hiphish/rainbow-delimiters.nvim'
 	use 'lambdalisue/suda.vim'
 	--Lsp-Zero
 	use {
@@ -35,4 +34,7 @@ return require('packer').startup(function(use)
 	use 'theprimeagen/vim-be-good'
 	use 'mbbill/undotree'
 	use 'tpope/vim-fugitive'
+
+
+	use 'hiphish/rainbow-delimiters.nvim'
 end)

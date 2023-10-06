@@ -7,6 +7,7 @@ require("tehfisk.remap")
 require("tehfisk.vimtex")
 require("tehfisk.autocmd")
 require("tehfisk.lsp")
+require("tehfisk.rainbow")
 
 vim.opt.encoding = 'utf-8'
 vim.opt.clipboard = 'unnamedplus'
