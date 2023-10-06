@@ -8,5 +8,5 @@ vim.g.tex_flavor = 'latex'
 --vim.g.vimtex_compiler_latexmk.out_dir = 'lol'
 
 vim.g.vimtex_compiler_latexmk = {
-	aux_dir = 'test',
+	aux_dir = vim.fn.expand('%:t:r') .. '_tex',
 }
