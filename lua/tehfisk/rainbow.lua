@@ -41,7 +41,6 @@ local col = {
             vscDarkYellow = '#FFD602',
             vscPink = '#C586C0',
         }
-print(col.vscYellow)
     vim.cmd(string.format([[highlight RainbowDelimiterRed  guifg=%s ctermfg=White]],col.vscRed))
     vim.cmd(string.format([[highlight RainbowDelimiterYellow  guifg=%s ctermfg=White]],col.vscDarkYellow))
     vim.cmd(string.format([[highlight RainbowDelimiterBlue  guifg=%s ctermfg=White]],col.vscBlue))
