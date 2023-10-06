@@ -6,7 +6,7 @@ vim.g.tex_flavor = 'latex'
 
 --vim.g.vimtex_compiler_latexmk = {'aux-dir': {-> expand("%:t:r")}}
 --vim.g.vimtex_compiler_latexmk.out_dir = 'lol'
-print(vim.fn.expand('%:t:r') .. '_test')
+local foldername = vim.fn.expand('%:t:r') .. '_test'
 vim.g.vimtex_compiler_latexmk = {
-	aux_dir = vim.fn.expand('%:t:r') .. '_tex',
+	aux_dir = foldername,
 }
