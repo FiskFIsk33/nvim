@@ -6,4 +6,5 @@ vim.g.tex_flavor = 'latex'
 
 --vim.g.vimtex_compiler_latexmk = {'aux-dir': {-> expand("%:t:r")}}
 --vim.g.vimtex_compiler_latexmk.out_dir = 'lol'
---print(vim.g.['vimtex_compiler_latexmk'])
+
+vim.g['vimtex_compiler_latexmk'] = ({'\'aux_dir\' : \'lol\''})
