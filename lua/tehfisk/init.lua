@@ -8,6 +8,7 @@ require("tehfisk.vimtex")
 require("tehfisk.autocmd")
 require("tehfisk.lsp")
 require("tehfisk.cmp")
+require("tehfisk.dap")
 --require("tehfisk.rainbow")
 
 vim.opt.encoding = 'utf-8'

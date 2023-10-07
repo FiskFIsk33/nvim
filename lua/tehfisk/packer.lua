@@ -29,12 +29,15 @@ return require('packer').startup(function(use)
 			{ 'hrsh7th/nvim-cmp' },
 			{ 'hrsh7th/cmp-nvim-lsp' },
 			{ 'L3MON4D3/LuaSnip' },
+			-- DAP
+			{ 'mfussenegger/nvim-dap' },
+			{ 'jay-babu/mason-nvim-dap.nvim' },
 		}
 	}
+
+-- others
 	use 'theprimeagen/vim-be-good'
 	use 'mbbill/undotree'
 	use 'tpope/vim-fugitive'
 
-
---	use 'hiphish/rainbow-delimiters.nvim'
 end)
