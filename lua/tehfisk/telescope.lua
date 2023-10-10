@@ -16,6 +16,10 @@ require('telescope').setup({
 			-- other layout configuration here
 		},
 		-- other defaults configuration here
+
+		file_ignore_patterns = {
+			".local"
+		},
 	},
 	pickers = {
 		find_files = {
@@ -50,4 +54,3 @@ require('telescope').setup({
 	vim.api.nvim_set_hl(0, 'TelescopeSelectionCaret', { fg = "red" }),
 
 })
-
