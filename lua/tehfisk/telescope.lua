@@ -54,3 +54,5 @@ require('telescope').setup({
 	vim.api.nvim_set_hl(0, 'TelescopeSelectionCaret', { fg = "red" }),
 
 })
+require('telescope').setup {}
+require('telescope').load_extension('fzf')
