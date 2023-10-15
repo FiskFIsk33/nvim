@@ -1,4 +1,6 @@
+require("gruvbox").load()
 local builtin = require('telescope.builtin')
+
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
@@ -37,17 +39,22 @@ require('telescope').setup({
 		},
 		spell_suggest = {
 			layout_strategy = 'cursor',
+			sorting_strategy = "ascending",
 			layout_config = {
-				width = 20,
+				width = 25,
 				height = 20,
 			},
 		}
 	},
-	vim.api.nvim_set_hl(0, 'TelescopeBorder', { fg = "#555555" }),
-	vim.api.nvim_set_hl(0, 'TelescopeNormal', { fg = "#BBBBBB" }),
-	vim.api.nvim_set_hl(0, 'TelescopeSelection', { fg = "#FFFFFF", bg = "#333333" }),
-	vim.api.nvim_set_hl(0, 'TelescopeMatching', { fg = "orange" }),
-	vim.api.nvim_set_hl(0, 'TelescopeSelectionCaret', { fg = "red" }),
+	vim.api.nvim_set_hl(0, 'TelescopeBorder', { link = "GruvboxGray" }),
+	vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { link = "GruvboxGray" }),
+	vim.api.nvim_set_hl(0, 'TelescopeResultsBorder', { link = "GruvboxGray" }),
+	vim.api.nvim_set_hl(0, 'TelescopePreviewBorder', { link = "GruvboxGray" }),
+	--vim.api.nvim_set_hl(0, "TelescopeBorder", { link = "green" }),
+	--vim.api.nvim_set_hl(0, 'TelescopeNormal', { fg = "#BBBBBB" }),
+	--vim.api.nvim_set_hl(0, 'TelescopeSelection', { fg = "#FFFFFF", bg = "#333333" }),
+	--vim.api.nvim_set_hl(0, 'TelescopeMatching', { fg = "orange" }),
+	--vim.api.nvim_set_hl(0, 'TelescopeSelectionCaret', { fg = "red" }),
 
 })
 require('telescope').setup {}

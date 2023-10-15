@@ -14,6 +14,10 @@ return require('packer').startup(function(use)
 	use 'junegunn/fzf.vim'
 	--use 'mrjones2014/nvim-ts-rainbow'
 	use 'lambdalisue/suda.vim'
+
+	--gruvbox theme
+	use { "ellisonleao/gruvbox.nvim" }
+
 	--Lsp-Zero
 	use {
 		'VonHeikemen/lsp-zero.nvim',
