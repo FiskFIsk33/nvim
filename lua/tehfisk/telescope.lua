@@ -4,6 +4,7 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>fc', builtin.command_history, {})
+vim.keymap.set('n', '<leader>fs', builtin.spell_suggest, {})
 
 require('telescope').setup({
 	defaults = {
@@ -33,6 +34,13 @@ require('telescope').setup({
 					height = 40
 				}
 			}
+		},
+		spell_suggest = {
+			layout_strategy = 'cursor',
+			layout_config = {
+				width = 20,
+				height = 20,
+			},
 		}
 	},
 	vim.api.nvim_set_hl(0, 'TelescopeBorder', { fg = "#555555" }),
