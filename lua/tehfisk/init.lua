@@ -9,6 +9,7 @@ require("tehfisk.autocmd")
 require("tehfisk.lsp")
 require("tehfisk.cmp")
 require("tehfisk.telescope")
+require("tehfisk.lualine")
 --require("tehfisk.rainbow")
 
 vim.opt.encoding = 'utf-8'

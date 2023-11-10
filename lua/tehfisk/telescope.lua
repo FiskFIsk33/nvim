@@ -1,16 +1,33 @@
 local builtin = require('telescope.builtin')
 
-local function live_grep_git_dir()
-  local git_dir = vim.fn.system(string.format("git -C %s rev-parse --show-toplevel", vim.fn.expand("%:p:h")))
-  git_dir = string.gsub(git_dir, "\n", "") -- remove newline character from git_dir
-  local opts = {
-    cwd = git_dir,
-  }
-  require('telescope.builtin').live_grep(opts)
+
+
+--live grep in git dir with fallback
+local function live_grep_from_project_git_root()
+	local function is_git_repo()
+		vim.fn.system("git rev-parse --is-inside-work-tree")
+
+		return vim.v.shell_error == 0
+	end
+
+	local function get_git_root()
+		local dot_git_path = vim.fn.finddir(".git", ".;")
+		return vim.fn.fnamemodify(dot_git_path, ":h")
+	end
+
+	local opts = {}
+
+	if is_git_repo() then
+		opts = {
+			cwd = get_git_root(),
+		}
+	end
+
+	require("telescope.builtin").live_grep(opts)
 end
 
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', live_grep_git_dir, {})
+vim.keymap.set('n', '<leader>fg', live_grep_from_project_git_root, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>fc', builtin.command_history, {})
@@ -57,6 +74,7 @@ require('telescope').setup({
 	},
 	pickers = {
 		live_grep = {
+
 		},
 		find_files = {
 			hidden = true,

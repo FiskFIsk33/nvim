@@ -39,11 +39,18 @@ return require('packer').startup(function(use)
 		}
 	}
 	use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+	}
 	--use { 'nvim-telescope/telescope-ui-select.nvim' }
 	use 'stevearc/dressing.nvim'
 	use 'theprimeagen/vim-be-good'
 	use 'mbbill/undotree'
 	use 'tpope/vim-fugitive'
+
+	use { "catppuccin/nvim", as = "catppuccin" }
 
 
 	--	use 'hiphish/rainbow-delimiters.nvim'
