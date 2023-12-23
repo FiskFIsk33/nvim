@@ -51,6 +51,14 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-fugitive'
 
 	use { "catppuccin/nvim", as = "catppuccin" }
+	use 'jacoborus/tender.vim'
+	use 'aklt/plantuml-syntax'
+	use "FabijanZulj/blame.nvim"
+
+	use {
+		'https://gitlab.com/itaranto/plantuml.nvim',
+		tag = '*',
+	}
 
 
 	--	use 'hiphish/rainbow-delimiters.nvim'

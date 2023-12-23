@@ -33,6 +33,7 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>fc', builtin.command_history, {})
 vim.keymap.set('n', '<leader>fs', builtin.spell_suggest, {})
 vim.keymap.set('n', '<leader>fr', builtin.registers, {})
+vim.keymap.set('n', 'gr', builtin.lsp_references, {}) --go list refs
 
 local telescopeConfig = require("telescope.config")
 
