@@ -1,5 +1,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.g.tex_flavor = 'later'
 
 require("tehfisk.bootstrapPacker")
 require("tehfisk.packer")

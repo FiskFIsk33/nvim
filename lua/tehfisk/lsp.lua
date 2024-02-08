@@ -13,13 +13,9 @@ lsp_zero.on_attach(function(client, bufnr)
 end)
 --
 ----
-require("mason").setup()
+require("mason").setup({})
 require('mason-lspconfig').setup({
   handlers = {
     lsp_zero.default_setup,
-    ltex = function()
-	    vim.opt_local.spelllang = 'en_gb'
-	    vim.opt_local.spell = false
-    end,
   },
 })
