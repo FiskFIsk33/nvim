@@ -9,13 +9,25 @@ lsp_zero.on_attach(function(client, bufnr)
 	vim.keymap.set('n', 'gt', builtin.lsp_type_definitions, {}) --go definition
 	vim.keymap.set('n', 'gi', builtin.lsp_implementations, {}) --go implementation
 	vim.keymap.set('n', 'gr', builtin.lsp_references, {}) --go list refs
-	vim.keymap.set('n', '<leader>fd', builtin.diagnostics, {}) --go prev diagnostic 
+	vim.keymap.set('n', '<leader>fd', builtin.diagnostics, {}) --go prev diagnostic
 end)
 --
 ----
 require("mason").setup({})
 require('mason-lspconfig').setup({
-  handlers = {
-    lsp_zero.default_setup,
-  },
+	handlers = {
+		lsp_zero.default_setup,
+		lua_ls = function()
+			require('lspconfig').lua_ls.setup({
+				settings = {
+					Lua = {
+						diagnostics = {
+							globals = { 'vim' }
+						}
+					}
+				}
+			})
+		end
+
+	},
 })
