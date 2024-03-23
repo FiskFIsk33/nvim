@@ -1,6 +1,5 @@
 require("lazy").setup({
 
-
 	"lervag/vimtex",
 	 { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 	'junegunn/fzf.vim',
@@ -33,5 +32,12 @@ require("lazy").setup({
 	'jacoborus/tender.vim',
 	'aklt/plantuml-syntax',
 	"FabijanZulj/blame.nvim",
+	{
+	    'windwp/nvim-autopairs',
+	    event = "InsertEnter",
+	    config = true
+	    -- use opts = {} for passing setup options
+	    -- this is equalent to setup({}) function
+	},
 
 })
