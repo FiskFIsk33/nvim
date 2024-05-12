@@ -27,6 +27,20 @@ require('mason-lspconfig').setup({
 					}
 				}
 			})
+		end,
+		tsserver = function()
+			require('lspconfig').tsserver.setup({
+				single_file_support = false,
+				settings = {
+					typescript = {
+						format = {
+							enable = false,
+						}
+					}
+				},
+				on_attach = function(client, bufnr)
+				end
+			})
 		end
 
 	},
