@@ -15,6 +15,7 @@ vim.cmd [[
 ]]
 
 --when opening latex file
+
 vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
     pattern = "*.tex",
     callback = function()
