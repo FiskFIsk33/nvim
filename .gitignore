@@ -2,3 +2,4 @@
 packer_compiled.lua
 *~
 *.swp
+lazy-lock.json
