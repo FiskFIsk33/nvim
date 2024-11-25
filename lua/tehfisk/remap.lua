@@ -19,3 +19,5 @@ vim.keymap.set("n", "N", "Nzzzv")
 --vim.cmd('command! -nargs=? -complete=file bajsbajs call s:write(<q-args>)')
 vim.api.nvim_create_user_command('Sw', 'SudaWrite', {})
 
+vim.keymap.set("n", "<leader>rr", ":set relativenumber!<CR>")
+

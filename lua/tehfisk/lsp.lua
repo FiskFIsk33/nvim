@@ -10,9 +10,13 @@ lsp_zero.on_attach(function(client, bufnr)
 	vim.keymap.set('n', 'gi', builtin.lsp_implementations, {}) --go implementation
 	vim.keymap.set('n', 'gr', builtin.lsp_references, {}) --go list refs
 	vim.keymap.set('n', '<leader>fd', builtin.diagnostics, {}) --go prev diagnostic
+	vim.keymap.set('n', '<leader>dp', vim.diagnostic.goto_prev, {}) --go prev diagnostic
+	vim.keymap.set('n', '<leader>dn', vim.diagnostic.goto_next, {}) --go prev diagnostic
 end)
 --
 ----
+
+
 require("mason").setup({})
 require('mason-lspconfig').setup({
 	handlers = {
@@ -46,3 +50,5 @@ require('mason-lspconfig').setup({
 
 	},
 })
+
+--vim.diagnostic.config({update_in_insert = true})

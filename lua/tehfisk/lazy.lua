@@ -1,5 +1,7 @@
 require("lazy").setup({
-
+	"voldikss/vim-floaterm",
+	"fiskfisk33/nvim-ghost.nvim",
+	"kmonad/kmonad-vim",
 	"lervag/vimtex",
 	 { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 	'junegunn/fzf.vim',
@@ -25,7 +27,6 @@ require("lazy").setup({
 	},
 	{ 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
 	'stevearc/dressing.nvim',
-	'theprimeagen/vim-be-good',
 	'mbbill/undotree',
 	'tpope/vim-fugitive',
 --	{ "catppuccin/nvim",           name = "catppuccin",                             priority = 1000 },

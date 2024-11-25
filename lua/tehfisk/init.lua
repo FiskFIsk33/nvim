@@ -12,6 +12,8 @@ require("tehfisk.lsp")
 require("tehfisk.cmp")
 require("tehfisk.telescope")
 require("tehfisk.lualine")
+require("tehfisk.ghosttext")
+require("tehfisk.floatterm")
 
 
 --require('plantuml').setup(
@@ -39,3 +41,5 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+
+
