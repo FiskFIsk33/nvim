@@ -52,3 +52,4 @@ require('mason-lspconfig').setup({
 })
 
 --vim.diagnostic.config({update_in_insert = true})
+vim.diagnostic.config({severity_sort = true})
